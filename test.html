@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melody Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Modal background */
+    .modal-bg { background: rgba(0,0,0,0.7); }
+  </style>
+</head>
+<body class="bg-white text-black font-sans">
+
+<!-- Header / Navbar -->
+<header class="fixed w-full bg-white shadow-md z-50">
+  <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="text-xl font-bold">Melody Portfolio</div>
+    <!-- Desktop Navbar -->
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#about" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">About</a></li>
+      <li><a href="#skills" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Skills</a></li>
+      <li><a href="#projects" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Projects</a></li>
+      <li><a href="#blogs" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Blogs</a></li>
+      <li><a href="#contact" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Contact</a></li>
+    </ul>
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white">
+    <ul class="flex flex-col p-4 space-y-3">
+      <li><a href="#about" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">About</a></li>
+      <li><a href="#skills" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Skills</a></li>
+      <li><a href="#projects" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Projects</a></li>
+      <li><a href="#blogs" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Blogs</a></li>
+      <li><a href="#contact" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="h-screen flex items-center p-6 fade-in">
+  <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <!-- Left Column: Image -->
+    <div class="w-full md:w-5/12 flex justify-center mb-8 md:mb-0">
+      <img src="images/melody.jpg" alt="Melody Egwuchukwu" class="w-80 h-80 rounded-full object-cover">
+    </div>
+    <!-- Right Column: Text and Buttons -->
+    <div class="w-full md:w-7/12 flex flex-col items-start md:items-start text-left space-y-6">
+      <h2 class="text-4xl md:text-5xl mb-2">Hi, I'm</h2>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Melody Egwuchukwu</h1>
+      <p class="text-xl md:text-2xl mb-4">Cloud Data Engineer | Creator</p>
+      <!-- Buttons -->
+      <div class="flex space-x-4 mb-4">
+        <a href="assets/Melody_Egwuchukwu_CV.pdf" target="_blank" class="px-8 py-3 border-2 border-black rounded-full hover:bg-black hover:text-white transition">View Resume</a>
+        <a href="#projects" class="px-8 py-3 border-2 border-black rounded-full hover:bg-black hover:text-white transition">View My Work</a>
+      </div>
+      <!-- Social Icons -->
+      <div class="flex space-x-4">
+        <a href="https://www.linkedin.com/in/melodyegwuchukwu" target="_blank" class="text-2xl hover:text-gray-500"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:melodydamisi22@gmail.com" target="_blank" class="text-2xl hover:text-gray-500"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container mx-auto py-24 px-6 fade-in">
+  <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+  <p class="max-w-3xl mx-auto text-center text-lg">
+    I’m a passionate web developer specializing in minimalist and interactive websites. I love turning ideas into clean, functional designs.
+  </p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container mx-auto py-24 px-6 fade-in">
+  <h2 class="text-4xl font-bold mb-12 text-center">Skills</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">HTML</div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">CSS / Tailwind</div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">JavaScript</div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">React</div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">Python / Flask</div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">Git / GitHub</div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">Figma / Design</div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">SEO / Analytics</div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container mx-auto py-24 px-6 fade-in">
+  <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="border border-black p-6 hover:bg-black hover:text-white transition cursor-pointer project-card" data-title="Project 1" data-desc="Description of Project 1">Project 1</div>
+    <div class="border border-black p-6 hover:bg-black hover:text-white transition cursor-pointer project-card" data-title="Project 2" data-desc="Description of Project 2">Project 2</div>
+    <div class="border border-black p-6 hover:bg-black hover:text-white transition cursor-pointer project-card" data-title="Project 3" data-desc="Description of Project 3">Project 3</div>
+  </div>
+</section>
+
+<!-- Blogs Section -->
+<section id="blogs" class="container mx-auto py-24 px-6 fade-in">
+  <h2 class="text-4xl font-bold mb-12 text-center">Blogs</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="border border-black p-6 hover:bg-black hover:text-white transition rounded-lg">
+      <h3 class="text-2xl font-semibold mb-2">Blog Post 1</h3>
+      <p>Short summary of the blog post.</p>
+      <a href="#" class="text-blue-500 underline mt-2 inline-block">Read More</a>
+    </div>
+    <div class="border border-black p-6 hover:bg-black hover:text-white transition rounded-lg">
+      <h3 class="text-2xl font-semibold mb-2">Blog Post 2</h3>
+      <p>Short summary of the blog post.</p>
+      <a href="#" class="text-blue-500 underline mt-2 inline-block">Read More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Projects -->
+<div id="modal" class="hidden fixed inset-0 flex items-center justify-center modal-bg z-50">
+  <div class="bg-white text-black p-8 rounded-lg max-w-lg w-full relative">
+    <button id="close-modal" class="absolute top-4 right-4 text-xl">&times;</button>
+    <h3 id="modal-title" class="text-2xl font-bold mb-4"></h3>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="container mx-auto py-24 px-6 fade-in">
+  <h2 class="text-4xl font-bold mb-6 text-center">Contact Me</h2>
+  <form class="max-w-2xl mx-auto flex flex-col space-y-4 hover:scale-105 transition-transform duration-300">
+    <input type="text" placeholder="Your Name" class="border border-black p-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+    <input type="email" placeholder="Your Email" class="border border-black p-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+    <textarea placeholder="Your Message" class="border border-black p-3 focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+    <button type="submit" class="px-6 py-3 border-2 border-black hover:bg-green-600 hover:text-white transition">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 text-center border-t border-black">
+  <p>&copy; 2025 Melody Egwuchukwu. All rights reserved.</p>
+  <div class="flex justify-center space-x-4 mt-4">
+    <a href="#" class="hover:text-gray-500"><i class="fab fa-github"></i></a>
+    <a href="#" class="hover:text-gray-500"><i class="fab fa-linkedin"></i></a>
+    <a href="#" class="hover:text-gray-500"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+  // Fade-in animation on scroll
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.2 };
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    });
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+
+  // Project modal
+  const modal = document.getElementById('modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
+  const closeModal = document.getElementById('close-modal');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+      modalTitle.textContent = card.dataset.title;
+      modalDesc.textContent = card.dataset.desc;
+      modal.classList.remove('hidden');
+    });
+  });
+
+  closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+  window.addEventListener('click', e => { if(e.target === modal) modal.classList.add('hidden'); });
+
+  // Active nav link on scroll
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id]');
+
+  window.addEventListener('scroll', () => {
+    let current = "";
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.offsetHeight;
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    // Ensure last section (Contact) highlights at bottom
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10) {
+      current = "contact";
+    }
+
+    navLinks.forEach(link => {
+      link.classList.remove("text-green-600", "font-bold", "scale-110");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("text-green-600", "font-bold", "scale-110");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
