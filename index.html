@@ -56,11 +56,11 @@
 </header>
 
 <!-- Hero Section -->
-<section id="home" class="h-screen flex items-center p-6 fade-in">
-  <div class="container mx-auto flex flex-col md:flex-row items-center">
+<section id="home" class="h-screen justify-center flex items-center p-6 fade-in">
+  <div class="flex flex-col md:flex-row items-center justify-center gap-14">
     <!-- Left Column: Image -->
-    <div class="w-full md:w-5/12 flex justify-center mb-8 md:mb-0">
-      <img src="images/melody.jpg" alt="Melody Egwuchukwu" class="w-80 h-80 rounded-full object-cover">
+    <div class="flex justify-center md:mt-0 mt-60  mb-2 md:mb-0">
+      <img src="images/melody.jpg" alt="Melody Egwuchukwu" class="md:w-80 w-60 md:h-80 h-60 rounded-full object-cover">
     </div>
     <!-- Right Column: Text and Buttons -->
     <div class="w-full md:w-7/12 flex flex-col items-start md:items-start text-left space-y-6">
@@ -76,6 +76,8 @@
       <div class="flex space-x-4">
         <a href="https://www.linkedin.com/in/melodyegwuchukwu" target="_blank" class="text-2xl hover:text-gray-500"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:melodydamisi22@gmail.com" target="_blank" class="text-2xl hover:text-gray-500"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/ogemelody" target="_blank" class="text-2xl hover:text-gray-500">
+    <i class="fab fa-github"></i>
       </div>
     </div>
   </div>
@@ -95,7 +97,10 @@
   <h2 class="text-4xl font-bold mb-12 text-center">Skills</h2>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
     <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">Terraform</div>
-    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg"> Data Orchestration </div>
+    <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">
+      <span class=" font-bold">  Data Orchestration:</span>
+      <br/>  <span class="text-sm"> Airflow, AWS Step Functions</span>
+    </div>
     <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">Containerization</div>
     <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">Data Modelling </div>
     <div class="p-6 border border-black hover:bg-black hover:text-white transition rounded-lg">Python</div>
