@@ -11,3 +11,16 @@ variable "mime_types" {
     ".pdf"  = "application/pdf"
   }
 }
+
+
+variable "domain" {
+  type        = string
+  description = "Domain"
+  default     = ""
+}
+
+variable "cloudflare_zone_id" {
+  type        = string
+  description = "Cloudflare Zone ID for the domain"
+  default     = ""
+}
