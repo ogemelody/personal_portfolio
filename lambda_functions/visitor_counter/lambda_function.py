@@ -33,7 +33,7 @@ def lambda_handler(event, context):
 👓 Total visits: {new_count}
 ⏳ Time: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')} UTC
 
-Keep creating amazing work! ✨"""
+Keep creating amazing work! """
         )
 
         return {
