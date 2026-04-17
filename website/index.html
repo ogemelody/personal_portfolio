@@ -36,6 +36,7 @@
       <li><a href="#skills" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Skills</a></li>
       <li><a href="#projects" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Projects</a></li>
       <li><a href="#blogs" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Blogs</a></li>
+       <li><a href="#resources" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Resources</a></li>
       <li><a href="#contact" class="nav-link transition-transform duration-300 hover:scale-110 hover:text-green-600">Contact</a></li>
     </ul>
     <!-- Mobile Menu Button -->
@@ -328,6 +329,7 @@
         <h3 class="font-semibold text-lg mb-2">Data Infrastructure Development</h3>
         <p class="text-sm text-gray-600 mb-4">
           Built an end-to-end data pipeline ecosystem that ingests, transforms, and unifies event streams from NoSQL databases and SaaS platforms into a single source of truth in BigQuery.
+          <strong>Stack:</strong> Python, DBT, Terraform, Bigquery, GCP Cloud Storage
         </p>
         <div class="mt-auto flex flex-wrap justify-center gap-3">
           <a href="https://github.com/ogemelody/data-infra-growth-stack" target="_blank"
@@ -339,7 +341,6 @@
   </div>
 </section>
 
-
 <!-- Blogs Section -->
 <section id="blogs" class="container mx-auto py-24 px-6 fade-in">
   <h2 class="text-4xl font-bold mb-12 text-center">Blogs</h2>
@@ -347,25 +348,42 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Blog 1 -->
     <div class="border border-black p-6 rounded-2xl hover:bg-black hover:text-white transition-all duration-500">
-      <h3 class="text-xl font-semibold mb-2">Creating VPC Peering Across Multiple VPCs</h3>
+      <h3 class="text-xl font-semibold mb-2">Your LakeFlow Gateway Is Burning Azure Credits — How to Attach a Compute Policy and Stop It</h3>
+      <i class="fab fa-medium text-xl"></i>
       <p class="text-sm mb-4">
-        A step-by-step guide on setting up secure and scalable VPC peering connections across multiple AWS environments to enhance cloud network communication.
+
+        A step-by-step guide to setting up a compute policy that limits your Databricks ingestion gateway to a single worker—so your costs stay under control.
       </p>
-      <a href="https://medium.com/@melodyegwuchukwu/creating-vpc-peering-across-multiple-vpcs-8abc796b735b" target="_blank" class="text-green-500 font-semibold underline hover:text-green-400 transition">Read More →</a>
+      <a href="blogs/blog_dbx.html" class="text-green-500 font-semibold underline hover:text-green-400 transition">Read More →</a>
+
     </div>
 
     <!-- Blog 2 -->
     <div class="border border-black p-6 rounded-2xl hover:bg-black hover:text-white transition-all duration-500">
+      <h3 class="text-xl font-semibold mb-2">Creating VPC Peering Across Multiple VPCs</h3>
+      <i class="fab fa-medium text-xl"></i>
+      <p class="text-sm mb-4">
+
+        A step-by-step guide on setting up secure and scalable VPC peering connections across multiple AWS environments to enhance cloud network communication.
+      </p>
+      <a href="https://medium.com/@melodyegwuchukwu/creating-vpc-peering-across-multiple-vpcs-8abc796b735b" target="_blank" class="text-green-500 font-semibold underline hover:text-green-400 transition">Read More →</a>
+
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="border border-black p-6 rounded-2xl hover:bg-black hover:text-white transition-all duration-500">
       <h3 class="text-xl font-semibold mb-2">Automate DBT Runs to BigQuery with Docker, GCR, Cloud Run & Scheduler</h3>
+      <i class="fab fa-medium text-xl"></i>
       <p class="text-sm mb-4">
         Automated the entire dbt transformation layer by deploying it as a containerized service on Google Cloud Run, enabling reliable, scheduled data model updates in BigQuery.
       </p>
       <a href="https://medium.com/@melodyegwuchukwu/automate-dbt-runs-to-bigquery-with-docker-gcr-cloud-run-scheduler-dec7b4a842a2" target="_blank" class="text-green-500 font-semibold underline hover:text-green-400 transition">Read More →</a>
     </div>
 
-    <!-- Blog 3 -->
+    <!-- Blog 4 -->
     <div class="border border-black p-6 rounded-2xl hover:bg-black hover:text-white transition-all duration-500">
       <h3 class="text-xl font-semibold mb-2">Build an end-end serverless ETL workflow using AWS Lambda and Deploying to AWS Redshift</h3>
+      <i class="fab fa-medium text-xl"></i>
       <p class="text-sm mb-4">
         Built a scalable, serverless data pipeline using AWS Lambda that automates the ETL process, delivering structured data to a Redshift data warehouse for analytics
       </p>
@@ -391,6 +409,36 @@
     <p id="modal-desc"></p>
   </div>
 </div>
+
+
+<!-- Resources Section -->
+<section id="resources" class="container mx-auto py-24 px-6 fade-in">
+  <h2 class="text-4xl font-bold mb-12 text-center">Resources</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+    <!-- Resource 1: Data Engineering Books -->
+<div class="border border-black p-6 rounded-2xl hover:bg-black hover:text-white transition-all duration-500">
+  <h3 class="text-xl font-semibold mb-2">Data Engineering Books Collection</h3>
+  <p class="text-sm mb-4">
+    A curated collection of data engineering books covering pipelines, big data, cloud architecture,python and best practices.
+  </p>
+
+  <div class="flex items-center justify-between">
+    <a href="https://github.com/ogemelody/ClousDataEngineeringBooks" target="_blank"
+       class="text-green-500 font-semibold underline hover:text-green-400 transition">
+       View on GitHub →
+    </a>
+
+    <i class="fab fa-github text-xl"></i>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
 
 <!-- Contact Section -->
 <section id="contact" class="container mx-auto py-24 px-6 fade-in">
@@ -423,27 +471,25 @@
       </div>
     </div>
 
+
     <!-- Right Side: Contact Form -->
-    <form class="space-y-5 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-      <div>
-        <input type="text" placeholder="Enter Your Name" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
-      </div>
-      <div>
-        <input type="email" placeholder="Enter Your Email Address" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
-      </div>
-      <div>
-        <input type="text" placeholder="Enter Subject Of The Mail" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black">
-      </div>
-      <div>
-        <textarea rows="4" placeholder="Enter Your Message Here" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"></textarea>
-      </div>
-      <button type="submit" class="w-full py-3 bg-black text-white font-semibold rounded-lg hover:bg-green-600 transition flex items-center justify-center gap-2">
-        SUBMIT
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </button>
-    </form>
+<form id="contactForm" class="space-y-5 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+  <div>
+    <input type="text" id="name" placeholder="Enter Your Name" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black" required>
+  </div>
+  <div>
+    <input type="email" id="email" placeholder="Enter Your Email Address" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black" required>
+  </div>
+  <div>
+    <textarea rows="4" id="message" placeholder="Enter Your Message Here" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black" required></textarea>
+  </div>
+  <button type="submit" class="w-full py-3 bg-black text-white font-semibold rounded-lg hover:bg-green-600 transition flex items-center justify-center gap-2">
+    SUBMIT
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </button>
+</form>
   </div>
 </section>
 
@@ -467,8 +513,10 @@
         box-shadow:0 4px 16px rgba(0,0,0,0.3);
         font-size:15px;
         z-index:9999;
-     ">
-    👓 Visitors: <span id="visitor-count">...</span>
+        cursor: help;
+     "
+     title="Click for details">
+    👥 Page View: <span id="visitor-count">...</span>
 </div>
 
 
@@ -476,10 +524,154 @@
 
 <!-- JavaScript -->
 <script>
-  // Mobile menu toggle
+   // Mobile menu toggle
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+  // ========== NEW VISITOR COUNTER & CONTACT FORM ==========
+// Unique Visitor Counter
+const API_URL = 'https://4g2r20be0g.execute-api.eu-central-1.amazonaws.com';
+
+// Generate or get visitor ID from cookie
+function getVisitorId() {
+    let visitorId = getCookie('visitor_id');
+
+    if (!visitorId) {
+        // Generate new visitor ID
+        visitorId = 'visitor_' + Math.random().toString(36).substr(2, 9) +
+                   '_' + Date.now().toString(36);
+        setCookie('visitor_id', visitorId, 365); // Store for 1 year
+    }
+
+    return visitorId;
+}
+
+// Cookie helper functions
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=Lax";
+}
+
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+// Update visitor counter
+async function updateVisitorCounter() {
+    try {
+        const visitorId = getVisitorId();
+
+        const response = await fetch(`${API_URL}/visitor-count`, {
+            headers: {
+                'X-Visitor-ID': visitorId
+            }
+        });
+
+        const data = await response.json();
+
+        if (data.unique_visitors) {
+            const counterElement = document.getElementById('visitor-count');
+            if (counterElement) {
+                // Show unique visitors count
+                counterElement.textContent = data.page_views.toLocaleString();
+
+                // Optional: Add tooltip with page views
+                counterElement.title = `Unique Visitors: ${data.unique_visitors.toLocaleString()}\nPage Views: ${data.page_views.toLocaleString()}`;
+
+                // Visual feedback for new visitors
+                if (data.is_new_visitor) {
+                    counterElement.style.animation = 'pulse 1s';
+                    setTimeout(() => {
+                        counterElement.style.animation = '';
+                    }, 1000);
+                }
+            }
+        }
+    } catch (error) {
+        console.log('Visitor counter unavailable');
+        const counterElement = document.getElementById('visitor-count');
+        if (counterElement) {
+            counterElement.textContent = '∞';
+        }
+    }
+}
+
+// Add some CSS for the pulse animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+`;
+document.head.appendChild(style);
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', updateVisitorCounter);
+
+  // Contact Form Handler
+  function initializeContactForm() {
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+          contactForm.addEventListener('submit', async function(e) {
+              e.preventDefault();
+
+              const formData = {
+                  name: document.getElementById('name').value,
+                  email: document.getElementById('email').value,
+                  message: document.getElementById('message').value
+              };
+
+              const submitButton = this.querySelector('button[type="submit"]');
+              const originalText = submitButton.textContent;
+
+              submitButton.textContent = 'Sending...';
+              submitButton.disabled = true;
+
+              try {
+                  const API_URL = 'https://4g2r20be0g.execute-api.eu-central-1.amazonaws.com';
+                  const response = await fetch(`${API_URL}/contact`, {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(formData)
+                  });
+
+                  const data = await response.json();
+
+                  if (response.ok) {
+                      alert('✅ Message sent successfully! I\'ll get back to you soon.');
+                      contactForm.reset();
+                  } else {
+                      alert(`❌ Error: ${data.error || 'Failed to send message'}`);
+                  }
+              } catch (error) {
+                  alert('❌ Network error. Please try again.');
+              } finally {
+                  submitButton.textContent = originalText;
+                  submitButton.disabled = false;
+              }
+          });
+      }
+  }
+
+  // Initialize new features when DOM loads
+  document.addEventListener('DOMContentLoaded', function() {
+      updateVisitorCounter();
+      initializeContactForm();
+  });
 
   // Fade-in animation on scroll
   const faders = document.querySelectorAll('.fade-in');
